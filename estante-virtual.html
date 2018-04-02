@@ -1,0 +1,430 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap -->
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+     <link rel="stylesheet" href="estilo.css">
+
+    <title>Agaque</title>
+    <link rel="icon" href="imagens/Icon.png">
+
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+  <body>
+
+    <!-- navbar -->
+    <nav nav class="navbar fixed-top navbar-expand-lg navbar-light navbar-transparent ">
+      <div class="container">
+        <div class="navbar-light"> 
+          <a href="Index.html" class="navbar-brand">
+            <span class="img-logo img-fluid"><img src="imagens/Icon.png" alt="">Estante Virtual</span>
+          </a>         
+          </div> 
+
+        <!-- Button Reponsive -->
+         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#barraNavegacao">
+            <span class="sr-only">Alternar Navegação</span>
+          <span class="navbar-toggler-icon"></span>
+            </button>
+
+        <!-- navbar -->
+
+          <div class="collapse navbar-collapse navbar-right" id="barraNavegacao">
+              <ul class="navbar-nav ml-auto ">
+                <li class="nav-item"><a href="#" class="nav-link"  data-toggle="modal" data-target="#pesquisar">Pesquisar</a></li>
+                <li class="nav-item divisor" role="separator"></li>
+                <li class="nav-item"><a href="estante-virtual.html" class="nav-link">Vitrine Virtual</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Grupos</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Calendário</a></li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> 
+                  Comércio</a>
+                    <div class="dropdown-menu  dropdown-design" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item " href="#">Compra</a>
+                      <a class="dropdown-item" href="#">Venda</a>
+                  </div> </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> 
+                  Outros</a>
+                    <div class="dropdown-menu  dropdown-design" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item " href="#">Divulgações</a>
+                      <a class="dropdown-item" href="#">Dicas</a>
+                      <a class="dropdown-item" href="#">Catálogo</a>
+                    </div></li>
+              </ul>
+          </div>
+        </div> <!--container-->
+  	</nav><!--/nav--> 
+
+    <!-- Modal -->
+    <div class="modal fade" id="pesquisar" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Janela de Pesquisa</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>        
+          </div>
+          <div class="modal-body">
+            <form class="form-inline col-sm-12">
+              <input class="form-control col-sm-12" type="search" placeholder="Search" aria-label="Search">
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="submit" class="btn btn-primary">Pesquisar</button>
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>            
+          </div>
+        </div>
+      </div>   
+    </div>
+
+  	<!--Conteúdos-->
+    <section id="box-catalog-lendo">
+      <div class="container verde">
+        <div class="row">
+          <!-- titulo -->
+          <div class="col-md-12 titulo">
+
+            <div class="row">
+               <div class="col-md-6">
+                Lendo
+              </div>
+            
+            <!-- botoes titulo -->
+              <div class="col-md-6 butao">
+                  <div class="btn-group butao" role="group" aria-label="Basic example">
+                   <input type="image" class="butao" src="imagens/excluir.png" >
+                   <input type="image" class="butao" src="imagens/add.png">
+                   <input type="image" class="butao" src="imagens/opcao.png">  
+                  </div>
+              </div>
+
+            </div>
+            <!-- Texto titulo -->
+             
+          </div>
+          </div> <!-- termino titulo -->
+
+          <!-- Catalogo -->
+            <div class="row">
+               <div class="col-md-12 catalogo">
+                <div class="row">
+                  <div class="col-md-2">
+                  <!-- imagem -->
+                    <a href="informacao.html">
+                    <p><img src="http://dummyimage.com/110x150/4d494d/686a82.gif&text=placeholder+image" alt="placeholder+image" class="img-fluid" /></p>
+                  <!-- classificação -->
+                    <p><img src="imagens/classificacao.png" class="img-fluid" style="width:100px" height="20px" alt=""></p>
+                  <!-- descrição -->
+                    <p>Batman O caveleiro das trevas</p>
+                    </a>                          
+                </div>
+
+                <div class="col-md-2">
+                  <!-- imagem -->
+                     <a href="informacao.html">
+                      <p><img src="http://dummyimage.com/110x150/4d494d/686a82.gif&text=placeholder+image" alt="placeholder+image" class="img-fluid" /></p>
+                  <!-- classificação -->
+                      <p><img src="imagens/classificacao.png" class="img-fluid" style="width:100px" height="20px" alt=""></p>
+                  <!-- descrição -->
+                    <p>Batman O caveleiro das trevas</p>
+                    </a>                         
+                </div>
+
+                 <div class="col-md-2">
+                  <!-- imagem -->
+                     <a href="informacao.html">
+                      <p><img src="http://dummyimage.com/110x150/4d494d/686a82.gif&text=placeholder+image" alt="placeholder+image" class="img-fluid" /></p>
+                  <!-- classificação -->
+                      <p><img src="imagens/classificacao.png" class="img-fluid" style="width:100px" height="20px" alt=""></p>
+                  <!-- descrição -->
+                    <p>Batman O caveleiro das trevas</p>
+                    </a>                                   
+                </div>
+
+                 <div class="col-md-2">
+                  <!-- imagem -->
+                     <a href="informacao.html">
+                      <p><img src="http://dummyimage.com/110x150/4d494d/686a82.gif&text=placeholder+image" alt="placeholder+image" class="img-fluid" /></p>
+                  <!-- classificação -->
+                      <p><img src="imagens/classificacao.png" class="img-fluid" style="width:100px" height="20px" alt=""></p>
+                  <!-- descrição -->
+                    <p>Batman O caveleiro das trevas</p>
+                    </a>                                   
+                </div>
+
+                 <div class="col-md-2">
+                  <!-- imagem -->
+                     <a href="informacao.html">
+                      <p><img src="http://dummyimage.com/110x150/4d494d/686a82.gif&text=placeholder+image" alt="placeholder+image" class="img-fluid" /></p>
+                  <!-- classificação -->
+                      <p><img src="imagens/classificacao.png" class="img-fluid" style="width:100px" height="20px" alt=""></p>
+                  <!-- descrição -->
+                    <p>Batman O caveleiro das trevas</p>
+                    </a>                                   
+                </div>
+
+                 <div class="col-md-2">
+                  <!-- imagem -->
+                     <a href="informacao.html">
+                      <p><img src="http://dummyimage.com/110x150/4d494d/686a82.gif&text=placeholder+image" alt="placeholder+image" class="img-fluid" /></p>
+                  <!-- classificação -->
+                      <p><img src="imagens/classificacao.png" class="img-fluid" style="width:100px" height="20px" alt=""></p>
+                  <!-- descrição -->
+                    <p>Batman O caveleiro das trevas</p>
+                    </a>                                   
+                </div>
+                </div>
+              </div>
+            </div>
+      </div>
+    </section>
+
+    <section id="box-catalog-resto">
+        <div class="container verde">
+          <div class="row">
+            <!-- titulo -->
+            <div class="col-md-12 titulo">
+
+              <div class="row">
+                 <div class="col-md-6">
+                  Quero Ler
+                </div>
+              
+              <!-- botoes titulo -->
+                <div class="col-md-6 butao">
+                    <div class="btn-group butao" role="group" aria-label="Basic example">
+                     <input type="image" class="butao" src="imagens/excluir.png" >
+                     <input type="image" class="butao" src="imagens/add.png">
+                     <input type="image" class="butao" src="imagens/opcao.png">  
+                    </div>
+                </div>
+
+              </div>
+              <!-- Texto titulo -->
+               
+            </div>
+            </div> <!-- termino titulo -->
+
+            <!-- Catalogo -->
+              <div class="row">
+                 <div class="col-md-12 catalogo">
+                  <div class="row">
+                    <div class="col-md-2">
+                    <!-- imagem -->
+                     <a href="informacao.html">
+                      <p><img src="http://dummyimage.com/110x150/4d494d/686a82.gif&text=placeholder+image" alt="placeholder+image" class="img-fluid" /></p>
+                  <!-- classificação -->
+                      <p><img src="imagens/classificacao.png" class="img-fluid" style="width:100px" height="20px" alt=""></p>
+                  <!-- descrição -->
+                    <p>Batman O caveleiro das trevas</p>
+                    </a>                                     
+                  </div>
+
+                  <div class="col-md-2">
+                    <!-- imagem -->
+                     <a href="informacao.html">
+                      <p><img src="http://dummyimage.com/110x150/4d494d/686a82.gif&text=placeholder+image" alt="placeholder+image" class="img-fluid" /></p>
+                  <!-- classificação -->
+                      <p><img src="imagens/classificacao.png" class="img-fluid" style="width:100px" height="20px" alt=""></p>
+                  <!-- descrição -->
+                    <p>Batman O caveleiro das trevas</p>
+                    </a>                                     
+                  </div>
+
+                   <div class="col-md-2">
+                    <!-- imagem -->
+                     <a href="informacao.html">
+                      <p><img src="http://dummyimage.com/110x150/4d494d/686a82.gif&text=placeholder+image" alt="placeholder+image" class="img-fluid" /></p>
+                  <!-- classificação -->
+                      <p><img src="imagens/classificacao.png" class="img-fluid" style="width:100px" height="20px" alt=""></p>
+                  <!-- descrição -->
+                    <p>Batman O caveleiro das trevas</p>
+                    </a>                                     
+                  </div>
+
+                   <div class="col-md-2">
+                    <!-- imagem -->
+                     <a href="informacao.html">
+                      <p><img src="http://dummyimage.com/110x150/4d494d/686a82.gif&text=placeholder+image" alt="placeholder+image" class="img-fluid" /></p>
+                  <!-- classificação -->
+                      <p><img src="imagens/classificacao.png" class="img-fluid" style="width:100px" height="20px" alt=""></p>
+                  <!-- descrição -->
+                    <p>Batman O caveleiro das trevas</p>
+                    </a>                                     
+                  </div>
+
+                   <div class="col-md-2">
+                    <!-- imagem -->
+                     <a href="informacao.html">
+                      <p><img src="http://dummyimage.com/110x150/4d494d/686a82.gif&text=placeholder+image" alt="placeholder+image" class="img-fluid" /></p>
+                  <!-- classificação -->
+                      <p><img src="imagens/classificacao.png" class="img-fluid" style="width:100px" height="20px" alt=""></p>
+                  <!-- descrição -->
+                    <p>Batman O caveleiro das trevas</p>
+                    </a>                                     
+                  </div>
+
+                   <div class="col-md-2">
+                    <!-- imagem -->
+                     <a href="informacao.html">
+                      <p><img src="http://dummyimage.com/110x150/4d494d/686a82.gif&text=placeholder+image" alt="placeholder+image" class="img-fluid" /></p>
+                  <!-- classificação -->
+                      <p><img src="imagens/classificacao.png" class="img-fluid" style="width:100px" height="20px" alt=""></p>
+                  <!-- descrição -->
+                    <p>Batman O caveleiro das trevas</p>
+                    </a>                                     
+                  </div>
+                  </div>
+                </div>
+              </div>
+        </div>
+    </section>
+
+    <section id="box-catalog-resto">
+      <div class="container verde">
+        <div class="row">
+          <!-- titulo -->
+          <div class="col-md-12 titulo">
+
+            <div class="row">
+               <div class="col-md-6">
+                Já lidos
+              </div>
+            
+            <!-- botoes titulo -->
+              <div class="col-md-6 butao">
+                  <div class="btn-group butao" role="group" aria-label="Basic example">
+                   <input type="image" class="butao" src="imagens/excluir.png" >
+                   <input type="image" class="butao" src="imagens/add.png">
+                   <input type="image" class="butao" src="imagens/opcao.png">  
+                  </div>
+              </div>
+
+            </div>
+            <!-- Texto titulo -->
+             
+          </div>
+          </div> <!-- termino titulo -->
+
+          <!-- Catalogo -->
+            <div class="row">
+               <div class="col-md-12 catalogo">
+                <div class="row">
+                  <div class="col-md-2">
+                  <!-- imagem -->
+                     <a href="informacao.html">
+                      <p><img src="http://dummyimage.com/110x150/4d494d/686a82.gif&text=placeholder+image" alt="placeholder+image" class="img-fluid" /></p>
+                  <!-- classificação -->
+                      <p><img src="imagens/classificacao.png" class="img-fluid" style="width:100px" height="20px" alt=""></p>
+                  <!-- descrição -->
+                    <p>Batman O caveleiro das trevas</p>
+                    </a>                                   
+                </div>
+
+                <div class="col-md-2">
+                  <!-- imagem -->
+                     <a href="informacao.html">
+                      <p><img src="http://dummyimage.com/110x150/4d494d/686a82.gif&text=placeholder+image" alt="placeholder+image" class="img-fluid" /></p>
+                  <!-- classificação -->
+                      <p><img src="imagens/classificacao.png" class="img-fluid" style="width:100px" height="20px" alt=""></p>
+                  <!-- descrição -->
+                    <p>Batman O caveleiro das trevas</p>
+                    </a>                                   
+                </div>
+
+                 <div class="col-md-2">
+                  <!-- imagem -->
+                     <a href="informacao.html">
+                      <p><img src="http://dummyimage.com/110x150/4d494d/686a82.gif&text=placeholder+image" alt="placeholder+image" class="img-fluid" /></p>
+                  <!-- classificação -->
+                      <p><img src="imagens/classificacao.png" class="img-fluid" style="width:100px" height="20px" alt=""></p>
+                  <!-- descrição -->
+                    <p>Batman O caveleiro das trevas</p>
+                    </a>                                   
+                </div>
+
+                 <div class="col-md-2">
+                  <!-- imagem -->
+                     <a href="informacao.html">
+                      <p><img src="http://dummyimage.com/110x150/4d494d/686a82.gif&text=placeholder+image" alt="placeholder+image" class="img-fluid" /></p>
+                  <!-- classificação -->
+                      <p><img src="imagens/classificacao.png" class="img-fluid" style="width:100px" height="20px" alt=""></p>
+                  <!-- descrição -->
+                    <p>Batman O caveleiro das trevas</p>
+                    </a>                                   
+                </div>
+
+                 <div class="col-md-2">
+                  <!-- imagem -->
+                     <a href="informacao.html">
+                      <p><img src="http://dummyimage.com/110x150/4d494d/686a82.gif&text=placeholder+image" alt="placeholder+image" class="img-fluid" /></p>
+                  <!-- classificação -->
+                      <p><img src="imagens/classificacao.png" class="img-fluid" style="width:100px" height="20px" alt=""></p>
+                  <!-- descrição -->
+                    <p>Batman O caveleiro das trevas</p>
+                    </a>                                   
+                </div>
+
+                 <div class="col-md-2">
+                  <!-- imagem -->
+                     <a href="informacao.html">
+                      <p><img src="http://dummyimage.com/110x150/4d494d/686a82.gif&text=placeholder+image" alt="placeholder+image" class="img-fluid" /></p>
+                  <!-- classificação -->
+                      <p><img src="imagens/classificacao.png" class="img-fluid" style="width:100px" height="20px" alt=""></p>
+                  <!-- descrição -->
+                    <p>Batman O caveleiro das trevas</p>
+                    </a>                                   
+                </div>
+                </div>
+              </div>
+            </div>
+      </div>
+    </section>
+  
+  	<!--Rodapé-->
+	  <footer id="rodape">
+  		<div class="container">
+        <div class="row">
+          <div class="col-md-3">
+            <span class="img-logo img-fluid">
+              <p style="text-align: right; padding-top:10px;">AGAQUE</p>
+            </span>
+          </div>
+
+          <div class="col-md-2">
+            <a href="#">Página Inicial</a>           
+          </div>
+
+          <div class="col-md-3">
+            <a href="#">Perguntas e Repostas</a>           
+          </div>
+
+          <div class="col-md-3">
+            <a href="#">Fale Conosco</a>           
+          </div>
+          
+        </div>
+        
+      </div>
+ 	  </footer>
+
+    
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>

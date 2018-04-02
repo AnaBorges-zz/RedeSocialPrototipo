@@ -1,0 +1,43 @@
+.img-logo{
+	height: 40px;
+	width: 132px;
+	display: block;
+	background: url(imagens/Icon.png)  no-repeat;
+	background-size: contain;
+	color: white;	
+}
+
+.img-logo img{
+	height: 40px;
+	width: 40px;
+	margin-right: 10px;
+}
+
+body{
+	background-image: url(imagens/comics.png),
+	                  url(imagens/ruido.png),
+				linear-gradient(50deg,#3E41EC,#87B791);	
+	background-attachment: fixed;
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	overflow-x: hidden;
+}
+
+nav.navbar-transparent{
+	padding: 15px 0px;
+	background: rgba(0,0,0,0.6);
+}
+
+.navbar-light .navbar-nav .nav-link, footer .nav a{
+	color:white;
+}
+
+
+.navbar-light .navbar-nav .nav-link:visited, footer .nav a{
+	color:white;
+}
+
+.navbar-light .navbar-nav .nav-link:hover, footer .nav a:hover {
+	color:#9BF0E1;
+}
+
+
