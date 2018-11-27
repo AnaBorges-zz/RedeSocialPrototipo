@@ -1,167 +1,483 @@
 <!doctype html>
 <html lang="pt-br">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap -->
-     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-     <link rel="stylesheet" href="estilo.css">
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-    <title>Agaque</title>
-    <link rel="icon" href="imagens/Icon.png">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+
+	<link rel="stylesheet" href="estilo.css">
+
+	<title>Mangaque</title>
+	<link rel="icon" href="imagens/Logo.png">
 
 
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
+  <![endif]-->
 </head>
-  <body>
+<body>
+	<!--header-->
+	<header>
+		<div id="capa">
+			<div class="container">
+				<div id="heading">
+					<a href="Index.html" style="float:left"><span class="img-logo img-fluid">
+						<img src="imagens/Logo.png" alt=""></span>
+					</a>
+					<div id="heading-text">
+						<span class="tema">MangaQue</span>
+						<span class="subtema">Sua Rede Social de Quadrinhos e Mangas</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header> 
+	<!-- navbar -->
+	<nav nav class="navbar navbar-expand-lg navbar-light navbar-transparent sticky-top">
 
-    <!-- navbar -->
-    <nav nav class="navbar fixed-top navbar-expand-lg navbar-light navbar-transparent ">
-      <div class="container">
-        <div class="navbar-light"> 
-          <a href="Index.html" class="navbar-brand">
-            <span class="img-logo img-fluid"><img src="imagens/Icon.png" alt="">Estante Virtual</span>
-          </a>         
-          </div> 
+		<!-- Button Reponsive -->
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#barraNavegacao">
+			<span class="navbar-toggler-icon"></span>
+			<span class="sr-only">Alternar Navegação</span>
+		</button>
 
-        <!-- Button Reponsive -->
-         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#barraNavegacao">
-            <span class="sr-only">Alternar Navegação</span>
-          <span class="navbar-toggler-icon"></span>
-            </button>
+		<!-- navbar -->
+		<div class="container">
+			<div class="collapse navbar-collapse container" id="barraNavegacao">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item"><a href="Index.html" class="nav-link">Página Inicial</a></li>
+					<li class="nav-item"><a href="perfil.html" class="nav-link">Perfil</a></li>
+					<li class="nav-item"><a href="catalogo.html" class="nav-link">Catálogo</a></li>
+					<li class="nav-item"><a href="forum.html" class="nav-link">Fórum</a></li>
+					<li class="nav-item"><a href="calendario.html" class="nav-link">Calendário</a></li>
+					<li class="nav-item"><a href="compra.html" class="nav-link">Compra</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav><!--nav--> 
 
-        <!-- navbar -->
 
-          <div class="collapse navbar-collapse navbar-right" id="barraNavegacao">
-              <ul class="navbar-nav ml-auto ">
-                <li class="nav-item"><a href="#" class="nav-link"  data-toggle="modal" data-target="#pesquisar">Pesquisar</a></li>
-                <li class="nav-item divisor" role="separator"></li>
-                <li class="nav-item"><a href="estante-virtual.html" class="nav-link">Vitrine Virtual</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Grupos</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Calendário</a></li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> 
-                  Comércio</a>
-                    <div class="dropdown-menu  dropdown-design" aria-labelledby="navbarDropdown">
-                      <a class="dropdown-item " href="#">Compra</a>
-                      <a class="dropdown-item" href="#">Venda</a>
-                  </div> </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> 
-                  Outros</a>
-                    <div class="dropdown-menu  dropdown-design" aria-labelledby="navbarDropdown">
-                      <a class="dropdown-item " href="#">Divulgações</a>
-                      <a class="dropdown-item" href="#">Dicas</a>
-                      <a class="dropdown-item" href="#">Catálogo</a>
-                    </div></li>
-              </ul>
-          </div>
-        </div> <!--container-->
-  	</nav><!--/nav--> 
+	<!--Conteúdos-->
+	<div class="container tudo">
+		<div class="row">
+			<main class="col-md-9">
+				<div class="info">
+					<img class="img-produto" src="imagens/comics/metal.png" alt="">
+					<div>
+						<h4>Fullmetal Alchemist VOL.1</h4>
+						<span><strong>Sinopse: </strong> Edward e Alphonse Elric perderam sua mãe. Os irmãos, então, decidem usar seus conhecimentos para quebrar o maior tabu da Alquimia: a transmutação humana.</span>
+						<br> 
+                        <span><strong>Vendido por:</strong> O_Colecionador666</span>
+                        <br>
+                        <span><strong> Whats App:</strong> 92122-6666</span>
+                        <br>
+                        <span><strong> Email:</strong> Rico666@gmail.com</span>
+                        <br>
+                        <span><strong> Localização:</strong> Queimados/ RJ</span>
+                        <br>
+                        <span><strong> Estado do Produto:</strong> Lacrado</span>
+                        
+                        
 
-    <!-- Modal -->
-    <div class="modal fade" id="pesquisar" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title">Janela de Pesquisa</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>        
-          </div>
-          <div class="modal-body">
-            <form class="form-inline col-sm-12">
-              <input class="form-control col-sm-12" type="search" placeholder="Search" aria-label="Search">
-            </form>
-          </div>
-          <div class="modal-footer">
-            <button type="submit" class="btn btn-primary">Pesquisar</button>
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>            
-          </div>
+						<div>
+							<p class="preco-medio"><span data-toggle="tooltip" data-placement="bottom" title="Preço de capa">R$16,90</span></p>
+						</div>
+						
+					</div>	
+				</div>
+
+				<ul id="clothing-nav" class="nav nav-tabs" role="tablist">
+
+					<li class="nav-item">
+						<a class="nav-link active link-tab" href="#avaliacao" role="tab" id="avaliacao-tab" data-toggle="tab" aria-controls="avaliacao">Avaliações</a>
+					</li>
+
+				
+
+					<li class="nav-item">
+						<a class="nav-link link-tab" href="#venda" role="tab" id="venda-tab" data-toggle="tab" aria-controls="venda">À venda</a>
+					</li>
+
+					<li class="nav-item">
+						<a class="nav-link link-tab" href="#obras" role="tab" id="obras-tab" data-toggle="tab" aria-controls="obras">Obras Parecidas</a>
+					</li>
+
+				</ul>
+
+				<!-- Content Panel -->
+				<div id="clothing-nav-content" class="tab-content">
+
+					<div role="tabpanel" class="tab-pane fade show active" id="avaliacao">	
+                        
+                        <section class="col-md-12 avaliacao">
+                        <div class="forum-post">
+					<div class="forum-perfil">
+						<img src="imagens/portrait/animegirl.jpg" alt="">
+						<h5>MariazinhaTKM</h5>
+					</div>
+
+					<h6>Digite seu comentário:	</h6>
+
+
+					<form id="form-coment">
+						<textarea id="comentario" style="height: 100px; width: 100%;" name=""></textarea>
+						<div>
+							<button type="submit" id="comentario" style="float:right;" class="btn btn-light">Publicar comentário</button>
+						</div>
+					</form>
+
+					<span class="forum-eachPost">
+						<div>28/06/2018</div>
+					</span>
+					
+				</div>
+                        </section>
+						<section class="col-md-12 avaliacao">
+							<div class="forum-post">
+								<div class="forum-perfil">
+									<img src="imagens/portrait/luffy.png" alt="">
+									<h5>Lukinhhas23Mk</h5>
+								</div>
+								<img class="img-class" src="imagens/classificacao.png" alt="placeholder+image">
+								<p> Manga muito maneiro, é o meu favorito de ação .</p>
+
+								<span class="forum-eachPost">
+									<div>Atualizado em: 11/06/2018</div>
+									<div class="btn-group" role="group" aria-label="Basic example">
+										<p class="quantidade">1</p>
+										<input type="image" class="butao-forum" src="imagens/button_curtir.png" >
+										<p class="quantidade">2</p>
+										<input type="image" class="butao-forum" src="imagens/button_nocurtir.png">
+										<input type="image" class="butao-forum" src="imagens/button_exclamation.png">  
+									</div>
+								</span>
+							</div>
+						</section>
+
+						<section class="col-md-12 avaliacao">
+							<div class="forum-post">
+								<div class="forum-perfil">
+									<img src="imagens/portrait/animegirl.jpg" alt="">
+									<h5>MariazinhaTKM</h5>
+								</div>
+								<img class="img-class" src="imagens/classificacao.png" alt="placeholder+image">
+								<p>É um dos meus mangás favoritos, é tão emocionante e envolvente a história dos irmãos, e tem personagens tão marcantes e bem construídos, com uma trama tão amarrada, eu amo.</p>
+
+								<span class="forum-eachPost">
+									<div>Atualizado em: 11/06/2018</div>
+									<div class="btn-group" role="group" aria-label="Basic example">
+										<p class="quantidade">31</p>
+										<input type="image" class="butao-forum" src="imagens/button_curtir.png" >
+										<p class="quantidade">2</p>
+										<input type="image" class="butao-forum" src="imagens/button_nocurtir.png">
+										<input type="image" class="butao-forum" src="imagens/button_exclamation.png">  
+									</div>
+								</span>
+							</div>
+						</section>
+
+						<section class="col-md-12 avaliacao">
+							<div class="forum-post">
+								<div class="forum-perfil">
+									<img src="imagens/portrait/naruto.jpg" alt="">
+									<h5>NarutoUchihaZ</h5>
+								</div>
+								<img class="img-class" src="imagens/classificacao.png" alt="placeholder+image">
+								<p>Não li, mas prefiro o Anime.</p>
+
+								<span class="forum-eachPost">
+									<div>Atualizado em: 11/06/2018</div>
+									<div class="btn-group" role="group" aria-label="Basic example">
+										<p class="quantidade">1</p>
+										<input type="image" class="butao-forum" src="imagens/button_curtir.png" >
+										<p class="quantidade">2</p>
+										<input type="image" class="butao-forum" src="imagens/button_nocurtir.png">
+										<input type="image" class="butao-forum" src="imagens/button_exclamation.png">  
+									</div>
+								</span>
+							</div>
+						</section>
+
+						<section class="col-md-12 avaliacao">
+							<div class="forum-post">
+								<div class="forum-perfil">
+									<img src="imagens/portrait/BR.png" alt="">
+									<h5>huehueBRBR66</h5>
+								</div>
+								<img class="img-class" src="imagens/classificacao.png" alt="placeholder+image">
+								<p>Esse mangá é uma besteira, fui ler pelo nome achando que ia ser uma história rock and roll, metal, e quando fui ver é maior drama.</p>
+
+								<span class="forum-eachPost">
+									<div>Atualizado em: 11/06/2018</div>
+									<div class="btn-group" role="group" aria-label="Basic example">
+										<p class="quantidade">1</p>
+										<input type="image" class="butao-forum" src="imagens/button_curtir.png" >
+										<p class="quantidade">21</p>
+										<input type="image" class="butao-forum" src="imagens/button_nocurtir.png">
+										<input type="image" class="butao-forum" src="imagens/button_exclamation.png">  
+									</div>
+								</span>
+							</div>
+						</section>
+
+						<section class="col-md-12 avaliacao">
+							<div class="forum-post">
+								<div class="forum-perfil">
+									<img src="imagens/portrait/v.jpg" alt="">
+									<h5>ArnaldoMASTER26</h5>
+								</div>
+								<img class="img-class" src="imagens/classificacao.png" alt="placeholder+image">
+								<p>Uma verdadeira obra de arte.</p>
+
+								<span class="forum-eachPost">
+									<div>Atualizado em: 11/06/2018</div>
+									<div class="btn-group" role="group" aria-label="Basic example">
+										<p class="quantidade">1</p>
+										<input type="image" class="butao-forum" src="imagens/button_curtir.png" >
+										<p class="quantidade">2</p>
+										<input type="image" class="butao-forum" src="imagens/button_nocurtir.png">
+										<input type="image" class="butao-forum" src="imagens/button_exclamation.png">  
+									</div>
+								</span>
+							</div>
+						</section>
+
+						
+
+						<section class="col-md-12 avaliacao">
+							<div class="forum-post">
+								<div class="forum-perfil">
+									<img src="imagens/portrait/mira.jpg" alt="">
+									<h5>MiraMETAL</h5>
+								</div>
+								<img class="img-class" src="imagens/classificacao.png" alt="placeholder+image">
+								<p> Fullmetal Alchemist é altamente recomendável se você quer conhecer um manga ótimo em todos os sentidos. A história é ótima, não é um manga parado, tem lutas na dose certa, sangue na dose certa, tristeza, agonia, tudo mesmo, na dose certa</p>
+
+								<span class="forum-eachPost">
+									<div>Atualizado em: 11/06/2018</div>
+									<div class="btn-group" role="group" aria-label="Basic example">
+										<p class="quantidade">1</p>
+										<input type="image" class="butao-forum" src="imagens/button_curtir.png" >
+										<p class="quantidade">2</p>
+										<input type="image" class="butao-forum" src="imagens/button_nocurtir.png">
+										<input type="image" class="butao-forum" src="imagens/button_exclamation.png">  
+									</div>
+								</span>
+							</div>
+						</section>
+					</div>
+
+					
+
+					<div role="tabpanel" class="tab-pane fade" id="venda">
+						<section>
+							<div class="row">
+								<div class="col-md-12 disposicao-grid-products">
+									<div class="col-md-3 produtos grid-products grid-catalogo">
+										<a href=""><img class="comics"src="imagens/Fulmetal/1.jpg" alt="placeholder+image">
+											<img class="img-classP" src="imagens/classificacao.png" alt="placeholder+image">
+											<p>Fullmetal Alchemist<br>R$7,00</p>
+										</a>
+									</div>
+
+									<div class="col-md-3 produtos grid-products grid-catalogo">
+										<a href=""><img class="comics"src="imagens/comics/metal.png" alt="placeholder+image">
+											<img class="img-classP" src="imagens/classificacao.png" alt="placeholder+image">
+											<p>Fullmetal Alchemist Vol.01<br>R$10,00</p>
+										</a>
+									</div>
+
+									<div class="col-md-3 produtos grid-products grid-catalogo">
+										<a href=""><img class="comics"src="imagens/Fulmetal/2.jpg" alt="placeholder+image">
+											<img class="img-classP" src="imagens/classificacao.png" alt="placeholder+image">
+											<p>Fullmetal<br>R$14,50</p>
+										</a>
+									</div>
+
+									<div class="col-md-3 produtos grid-products grid-catalogo">
+										<a href=""><img class="comics"src="imagens/Fulmetal/3.png" alt="placeholder+image">
+											<img class="img-classP" src="imagens/classificacao.png" alt="placeholder+image">
+											<p>Fullmetal<br>R$15,00</p>
+										</a>
+									</div>
+
+								</div>
+							</div>
+						</section>
+					</div>
+
+					<div role="tabpanel" class="tab-pane fade" id="obras">
+						<section>
+							<div class="container">
+								<!-- Catalogo -->
+								<div class="row">
+									<div class="col-md-12 disposicao-grid-products">
+										<div class="col-md-3 produtos grid-products grid-catalogo">
+											<a href=""><img class="comics"src="imagens/comics/berserk.jpg" alt="placeholder+image">
+												<img class="img-classP" src="imagens/classificacao.png" alt="placeholder+image">
+												<p>BERSERK</p>
+
+											</a>
+										</div>
+
+										<div class="col-md-3 produtos grid-products grid-catalogo">
+											<a href=""><img class="comics"src="imagens/comics/titan.jpg" alt="placeholder+image">
+												<img class="img-classP" src="imagens/classificacao.png" alt="placeholder+image">
+												<p>Attack On Titan</p>
+
+											</a>
+										</div>
+
+										<div class="col-md-3 produtos grid-products grid-catalogo">
+											<a href=""><img class="comics"src="imagens/comics/death.jpg" alt="placeholder+image">
+												<img class="img-classP" src="imagens/classificacao.png" alt="placeholder+image">
+												<p>Death Note</p>
+
+											</a>
+										</div>
+
+
+
+										<div class="col-md-3 produtos grid-products grid-catalogo">
+											<a href=""><img class="comics"src="imagens/comics/vinland.jpg" alt="placeholder+image">
+												<img class="img-classP" src="imagens/classificacao.png" alt="placeholder+image">
+												<p>Vinland Saga</p>
+
+											</a>
+										</div>
+
+
+
+										<div class="col-md-3 produtos grid-products grid-catalogo">
+											<a href=""><img class="comics"src="imagens/comics/ajin.jpg" alt="placeholder+image">
+												<img class="img-classP" src="imagens/classificacao.png" alt="placeholder+image">
+												<p>Ajin</p>
+
+											</a>
+										</div>
+
+										<div class="col-md-3 produtos grid-products grid-catalogo">
+											<a href=""><img class="comics"src="imagens/comics/hero.png" alt="placeholder+image">
+												<img class="img-classP" src="imagens/classificacao.png" alt="placeholder+image">
+												<p>My Hero Academia</p>
+
+											</a>
+										</div>
+
+										<div class="col-md-3 produtos grid-products grid-catalogo">
+											<a href=""><img class="comics"src="imagens/comics/onepiecee.jpg" alt="placeholder+image">
+												<img class="img-classP" src="imagens/classificacao.png" alt="placeholder+image">
+												<p>One Piece</p>
+
+											</a>
+										</div>
+
+										<div class="col-md-3 produtos grid-products grid-catalogo">
+											<a href=""><img class="comics"src="imagens/comics/parasytee.jpg" alt="placeholder+image">
+												<img class="img-classP" src="imagens/classificacao.png" alt="placeholder+image">
+												<p>Parasyte</p>
+
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</section>
+					</div>
+				</div>
+            </main>
+            
+                      <aside class="col-md-3 detalhes">
+                <div class="aside topList">
+                    <h5>Top 10 semanal</h5>
+                    <p><a href="informacao.html">#1 One Piece</a></p>
+                    <p><a href="informacao.html">#2 Batman</a></p>
+                    <p><a href="informacao.html">#3 The Gamer</a></p>
+                    <p><a href="informacao.html">#4 Spider Man</a></p>
+                    <p><a href="informacao.html">#5 Liga da Justiça</a></p>
+                    <p><a href="informacao.html">#6 X-men</a></p>
+                    <p><a href="informacao.html">#7 My Hero Academia</a></p>
+                    <p><a href="informacao.html">#8 Vingadores</a></p>
+                    <p><a href="informacao.html">#9 Naruto</a></p>
+                    <p><a href="informacao.html">#10 Tokyo Ghoul</a></p>
+                </div>
+
+                <div class="aside recomendacao">
+                    <h5>Recomendações</h5>
+                    <div class="itensRecom">
+                        <div><a href="informacao.html">
+                            <img class="comicsR" src="imagens/comics/zatanna.jpg" alt="Zatanna">
+                            <p class="center">Zatanna</p></a>
+                        </div>
+
+                        <div><a href="informacao.html">
+                            <img class="comicsR" src="imagens/comics/strange.jpg" alt="DoutorEstranho">
+                            <p>Doutor<br>Estranho</p></a>
+                        </div>
+
+                        <div><a href="informacao.html">
+                            <img class="comicsR" src="imagens/comics/metal.png" alt="FMA">
+                            <p>Fullmetal<br>Alchemist</p></a>
+                        </div>
+
+                        <div><a href="informacao.html">
+                            <img class="comicsR" src="imagens/comics/american%20gods.jpg" alt="Deuses americanos"><p>Deuses<br>Americanos</p></a>
+                        </div>
+
+                        <div><a href="informacao.html">
+                            <img class="comicsR" src="imagens/comics/tokyo.jpg" alt="TokyoGhoul">
+                            <p>Tokyo ghoul</p></a>
+                        </div>
+
+                        <div><a href="informacao.html">
+                            <img class="comicsR" src="imagens/comics/ajin.jpg" alt="Ajin">
+                            <p>Ajin</p></a>
+                        </div>
+
+                    </div>
+                </div>
+            </aside>
         </div>
-      </div>   
     </div>
 
-    <!-- Conteudo -->
-     <section id="box-catalog-lendo">
-      <div class="container verde">
-        <div class="row">
-          <!-- Descrição -->
-          <div class="col-md-3 descricao">
-            <div>
-              <p>Descricao</p>
-            </div>         
-          </div>
+            
+<!--Rodapé-->
+<footer id="rodape">
+	<div class="container edicaoFooter">
+		<div>
+			<span class="img-logoFooter img-fluid">
+				<img src="imagens/Logo.png" alt="">
+				<span class="spanFooter"><a href="Index.html">Mangaque</a></span>
+			</span>
+		</div>
 
-          <div class="col-md-8 descricao">
-            <div>
-              <p>Conteúdo</p>
-            </div>
-            <div>
-              <ul class="nav nav-tabs">
-                <li class="nav-item">
-                  <a class="nav-link active" href="#">Sinopse</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Avaliações</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Resenhas</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Á venda</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Obras Parecidas</a>
-                </li>
-              </ul>
-            </div>        
-          </div>
-          
-        </div>
-      </div>
-    </section>
+		<div>
+			<a id="gotop" href="#" onclick="MGJS.goTop();return false;"><i class="fas fa-arrow-alt-circle-up fa-2x"></i></a>			
+		</div>
+	</div>
 
-  
-  	<!--Rodapé-->
-	 <!--  <footer id="rodape">
-  		<div class="container">
-        <div class="row">
-          <div class="col-md-3">
-            <span class="img-logo img-fluid">
-              <p style="text-align: right; padding-top:10px;">AGAQUE</p>
-            </span>
-          </div>
+</footer>
 
-          <div class="col-md-2">
-            <a href="#">Página Inicial</a>           
-          </div>
 
-          <div class="col-md-3">
-            <a href="#">Perguntas e Repostas</a>           
-          </div>
 
-          <div class="col-md-3">
-            <a href="#">Fale Conosco</a>           
-          </div>
-          
-        </div>
-        
-      </div>
- 	  </footer>
- -->
-    
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-  </body>
+<script type="text/javascript">
+	$(function () {
+		$('[data-toggle="tooltip"]').tooltip()
+	})
+</script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
 </html>
